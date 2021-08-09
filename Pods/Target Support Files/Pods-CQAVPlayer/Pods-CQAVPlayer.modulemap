@@ -1,0 +1,6 @@
+framework module Pods_CQAVPlayer {
+  umbrella header "Pods-CQAVPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

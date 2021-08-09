@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1685037826B674D10061A3D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685037726B674D10061A3D3 /* AppDelegate.swift */; };
+		1685037A26B674D10061A3D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685037926B674D10061A3D3 /* SceneDelegate.swift */; };
+		1685037C26B674D10061A3D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685037B26B674D10061A3D3 /* ViewController.swift */; };
+		1685037F26B674D10061A3D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1685037D26B674D10061A3D3 /* Main.storyboard */; };
+		1685038126B674D40061A3D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1685038026B674D40061A3D3 /* Assets.xcassets */; };
+		1685038426B674D40061A3D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1685038226B674D40061A3D3 /* LaunchScreen.storyboard */; };
+		1685038F26B674D40061A3D3 /* CQAVPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685038E26B674D40061A3D3 /* CQAVPlayerTests.swift */; };
+		1685039A26B674D40061A3D3 /* CQAVPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685039926B674D40061A3D3 /* CQAVPlayerUITests.swift */; };
+		168503A826B675CF0061A3D3 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168503A726B675CF0061A3D3 /* VideoPlayerView.swift */; };
+		168503AA26B68ACF0061A3D3 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168503A926B68ACF0061A3D3 /* PlayerView.swift */; };
+		56C72F2F83C891195C155455 /* Pods_CQAVPlayer_CQAVPlayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF87F9E756928C5F783FFF8 /* Pods_CQAVPlayer_CQAVPlayerUITests.framework */; };
+		8C2E6F1A2D746FD6F4CC0090 /* Pods_CQAVPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE42D258A572F3E4AA711924 /* Pods_CQAVPlayer.framework */; };
+		A4886AB726C0E3580000E38E /* DragGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4886AB626C0E3580000E38E /* DragGestureHandler.swift */; };
+		A4886AB926C101220000E38E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4886AB826C101220000E38E /* UIView+Extension.swift */; };
+		A4C94C8A26BB8535009580BA /* MySlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C94C8926BB8535009580BA /* MySlider.swift */; };
+		E373E25F4E695B9B00BEBDCC /* Pods_CQAVPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079914F9C75CA9BB914525A9 /* Pods_CQAVPlayerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1685038B26B674D40061A3D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1685036C26B674D10061A3D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1685037326B674D10061A3D3;
+			remoteInfo = CQAVPlayer;
+		};
+		1685039626B674D40061A3D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1685036C26B674D10061A3D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1685037326B674D10061A3D3;
+			remoteInfo = CQAVPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		079914F9C75CA9BB914525A9 /* Pods_CQAVPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQAVPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1685037426B674D10061A3D3 /* CQAVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CQAVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1685037726B674D10061A3D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1685037926B674D10061A3D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1685037B26B674D10061A3D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1685037E26B674D10061A3D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1685038026B674D40061A3D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1685038326B674D40061A3D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1685038526B674D40061A3D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1685038A26B674D40061A3D3 /* CQAVPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CQAVPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1685038E26B674D40061A3D3 /* CQAVPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQAVPlayerTests.swift; sourceTree = "<group>"; };
+		1685039026B674D40061A3D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1685039526B674D40061A3D3 /* CQAVPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CQAVPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1685039926B674D40061A3D3 /* CQAVPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQAVPlayerUITests.swift; sourceTree = "<group>"; };
+		1685039B26B674D40061A3D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		168503A726B675CF0061A3D3 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		168503A926B68ACF0061A3D3 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		17251B4C2EE50C1E8939B0EB /* Pods-CQAVPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAVPlayerTests.release.xcconfig"; path = "Target Support Files/Pods-CQAVPlayerTests/Pods-CQAVPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		23A093C0DAD40840C645177C /* Pods-CQAVPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAVPlayerTests.debug.xcconfig"; path = "Target Support Files/Pods-CQAVPlayerTests/Pods-CQAVPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3083E62B2474ED2EF96F65CA /* Pods-CQAVPlayer-CQAVPlayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAVPlayer-CQAVPlayerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CQAVPlayer-CQAVPlayerUITests/Pods-CQAVPlayer-CQAVPlayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4886AB626C0E3580000E38E /* DragGestureHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureHandler.swift; sourceTree = "<group>"; };
+		A4886AB826C101220000E38E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A4C94C8926BB8535009580BA /* MySlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySlider.swift; sourceTree = "<group>"; };
+		AA177E500E9F14873AEB6058 /* Pods-CQAVPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAVPlayer.release.xcconfig"; path = "Target Support Files/Pods-CQAVPlayer/Pods-CQAVPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		ADF87F9E756928C5F783FFF8 /* Pods_CQAVPlayer_CQAVPlayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQAVPlayer_CQAVPlayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DF1E3B990A3E42AF9D794E /* Pods-CQAVPlayer-CQAVPlayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAVPlayer-CQAVPlayerUITests.release.xcconfig"; path = "Target Support Files/Pods-CQAVPlayer-CQAVPlayerUITests/Pods-CQAVPlayer-CQAVPlayerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE42D258A572F3E4AA711924 /* Pods_CQAVPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQAVPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E091AE9D0D23171CE7621E81 /* Pods-CQAVPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAVPlayer.debug.xcconfig"; path = "Target Support Files/Pods-CQAVPlayer/Pods-CQAVPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1685037126B674D10061A3D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2E6F1A2D746FD6F4CC0090 /* Pods_CQAVPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1685038726B674D40061A3D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E373E25F4E695B9B00BEBDCC /* Pods_CQAVPlayerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1685039226B674D40061A3D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C72F2F83C891195C155455 /* Pods_CQAVPlayer_CQAVPlayerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1685036B26B674D10061A3D3 = {
+			isa = PBXGroup;
+			children = (
+				1685037626B674D10061A3D3 /* CQAVPlayer */,
+				1685038D26B674D40061A3D3 /* CQAVPlayerTests */,
+				1685039826B674D40061A3D3 /* CQAVPlayerUITests */,
+				1685037526B674D10061A3D3 /* Products */,
+				D97E36840552DE67A9A91FA9 /* Pods */,
+				F487944195F6EA95AEA59AC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1685037526B674D10061A3D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1685037426B674D10061A3D3 /* CQAVPlayer.app */,
+				1685038A26B674D40061A3D3 /* CQAVPlayerTests.xctest */,
+				1685039526B674D40061A3D3 /* CQAVPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1685037626B674D10061A3D3 /* CQAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1685037726B674D10061A3D3 /* AppDelegate.swift */,
+				1685037926B674D10061A3D3 /* SceneDelegate.swift */,
+				1685037B26B674D10061A3D3 /* ViewController.swift */,
+				168503A726B675CF0061A3D3 /* VideoPlayerView.swift */,
+				168503A926B68ACF0061A3D3 /* PlayerView.swift */,
+				A4C94C8926BB8535009580BA /* MySlider.swift */,
+				A4886AB826C101220000E38E /* UIView+Extension.swift */,
+				A4886AB626C0E3580000E38E /* DragGestureHandler.swift */,
+				1685037D26B674D10061A3D3 /* Main.storyboard */,
+				1685038026B674D40061A3D3 /* Assets.xcassets */,
+				1685038226B674D40061A3D3 /* LaunchScreen.storyboard */,
+				1685038526B674D40061A3D3 /* Info.plist */,
+			);
+			path = CQAVPlayer;
+			sourceTree = "<group>";
+		};
+		1685038D26B674D40061A3D3 /* CQAVPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1685038E26B674D40061A3D3 /* CQAVPlayerTests.swift */,
+				1685039026B674D40061A3D3 /* Info.plist */,
+			);
+			path = CQAVPlayerTests;
+			sourceTree = "<group>";
+		};
+		1685039826B674D40061A3D3 /* CQAVPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1685039926B674D40061A3D3 /* CQAVPlayerUITests.swift */,
+				1685039B26B674D40061A3D3 /* Info.plist */,
+			);
+			path = CQAVPlayerUITests;
+			sourceTree = "<group>";
+		};
+		D97E36840552DE67A9A91FA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E091AE9D0D23171CE7621E81 /* Pods-CQAVPlayer.debug.xcconfig */,
+				AA177E500E9F14873AEB6058 /* Pods-CQAVPlayer.release.xcconfig */,
+				3083E62B2474ED2EF96F65CA /* Pods-CQAVPlayer-CQAVPlayerUITests.debug.xcconfig */,
+				B5DF1E3B990A3E42AF9D794E /* Pods-CQAVPlayer-CQAVPlayerUITests.release.xcconfig */,
+				23A093C0DAD40840C645177C /* Pods-CQAVPlayerTests.debug.xcconfig */,
+				17251B4C2EE50C1E8939B0EB /* Pods-CQAVPlayerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F487944195F6EA95AEA59AC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE42D258A572F3E4AA711924 /* Pods_CQAVPlayer.framework */,
+				ADF87F9E756928C5F783FFF8 /* Pods_CQAVPlayer_CQAVPlayerUITests.framework */,
+				079914F9C75CA9BB914525A9 /* Pods_CQAVPlayerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1685037326B674D10061A3D3 /* CQAVPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1685039E26B674D40061A3D3 /* Build configuration list for PBXNativeTarget "CQAVPlayer" */;
+			buildPhases = (
+				64008F52247060151E62F892 /* [CP] Check Pods Manifest.lock */,
+				1685037026B674D10061A3D3 /* Sources */,
+				1685037126B674D10061A3D3 /* Frameworks */,
+				1685037226B674D10061A3D3 /* Resources */,
+				6E7DE00318EA18C10694F9BD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CQAVPlayer;
+			productName = CQAVPlayer;
+			productReference = 1685037426B674D10061A3D3 /* CQAVPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1685038926B674D40061A3D3 /* CQAVPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 168503A126B674D40061A3D3 /* Build configuration list for PBXNativeTarget "CQAVPlayerTests" */;
+			buildPhases = (
+				5DE9353A29727F242669CBA2 /* [CP] Check Pods Manifest.lock */,
+				1685038626B674D40061A3D3 /* Sources */,
+				1685038726B674D40061A3D3 /* Frameworks */,
+				1685038826B674D40061A3D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1685038C26B674D40061A3D3 /* PBXTargetDependency */,
+			);
+			name = CQAVPlayerTests;
+			productName = CQAVPlayerTests;
+			productReference = 1685038A26B674D40061A3D3 /* CQAVPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1685039426B674D40061A3D3 /* CQAVPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 168503A426B674D40061A3D3 /* Build configuration list for PBXNativeTarget "CQAVPlayerUITests" */;
+			buildPhases = (
+				A5AFAC8B8388FF8AC12AAFCE /* [CP] Check Pods Manifest.lock */,
+				1685039126B674D40061A3D3 /* Sources */,
+				1685039226B674D40061A3D3 /* Frameworks */,
+				1685039326B674D40061A3D3 /* Resources */,
+				A08EDE0027257DC0AD176F57 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1685039726B674D40061A3D3 /* PBXTargetDependency */,
+			);
+			name = CQAVPlayerUITests;
+			productName = CQAVPlayerUITests;
+			productReference = 1685039526B674D40061A3D3 /* CQAVPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1685036C26B674D10061A3D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1685037326B674D10061A3D3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1685038926B674D40061A3D3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1685037326B674D10061A3D3;
+					};
+					1685039426B674D40061A3D3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1685037326B674D10061A3D3;
+					};
+				};
+			};
+			buildConfigurationList = 1685036F26B674D10061A3D3 /* Build configuration list for PBXProject "CQAVPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1685036B26B674D10061A3D3;
+			productRefGroup = 1685037526B674D10061A3D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1685037326B674D10061A3D3 /* CQAVPlayer */,
+				1685038926B674D40061A3D3 /* CQAVPlayerTests */,
+				1685039426B674D40061A3D3 /* CQAVPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1685037226B674D10061A3D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1685038426B674D40061A3D3 /* LaunchScreen.storyboard in Resources */,
+				1685038126B674D40061A3D3 /* Assets.xcassets in Resources */,
+				1685037F26B674D10061A3D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1685038826B674D40061A3D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1685039326B674D40061A3D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DE9353A29727F242669CBA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CQAVPlayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64008F52247060151E62F892 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CQAVPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E7DE00318EA18C10694F9BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CQAVPlayer/Pods-CQAVPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CQAVPlayer/Pods-CQAVPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CQAVPlayer/Pods-CQAVPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A08EDE0027257DC0AD176F57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CQAVPlayer-CQAVPlayerUITests/Pods-CQAVPlayer-CQAVPlayerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CQAVPlayer-CQAVPlayerUITests/Pods-CQAVPlayer-CQAVPlayerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CQAVPlayer-CQAVPlayerUITests/Pods-CQAVPlayer-CQAVPlayerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5AFAC8B8388FF8AC12AAFCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CQAVPlayer-CQAVPlayerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1685037026B674D10061A3D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C94C8A26BB8535009580BA /* MySlider.swift in Sources */,
+				1685037C26B674D10061A3D3 /* ViewController.swift in Sources */,
+				A4886AB926C101220000E38E /* UIView+Extension.swift in Sources */,
+				1685037826B674D10061A3D3 /* AppDelegate.swift in Sources */,
+				1685037A26B674D10061A3D3 /* SceneDelegate.swift in Sources */,
+				A4886AB726C0E3580000E38E /* DragGestureHandler.swift in Sources */,
+				168503AA26B68ACF0061A3D3 /* PlayerView.swift in Sources */,
+				168503A826B675CF0061A3D3 /* VideoPlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1685038626B674D40061A3D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1685038F26B674D40061A3D3 /* CQAVPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1685039126B674D40061A3D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1685039A26B674D40061A3D3 /* CQAVPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1685038C26B674D40061A3D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1685037326B674D10061A3D3 /* CQAVPlayer */;
+			targetProxy = 1685038B26B674D40061A3D3 /* PBXContainerItemProxy */;
+		};
+		1685039726B674D40061A3D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1685037326B674D10061A3D3 /* CQAVPlayer */;
+			targetProxy = 1685039626B674D40061A3D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1685037D26B674D10061A3D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1685037E26B674D10061A3D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1685038226B674D40061A3D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1685038326B674D40061A3D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1685039C26B674D40061A3D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1685039D26B674D40061A3D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1685039F26B674D40061A3D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E091AE9D0D23171CE7621E81 /* Pods-CQAVPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HSU9RDWBTM;
+				INFOPLIST_FILE = CQAVPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chenqing.CQAVPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		168503A026B674D40061A3D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA177E500E9F14873AEB6058 /* Pods-CQAVPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HSU9RDWBTM;
+				INFOPLIST_FILE = CQAVPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chenqing.CQAVPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		168503A226B674D40061A3D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23A093C0DAD40840C645177C /* Pods-CQAVPlayerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N4A75FTPE;
+				INFOPLIST_FILE = CQAVPlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chenqing.CQAVPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CQAVPlayer.app/CQAVPlayer";
+			};
+			name = Debug;
+		};
+		168503A326B674D40061A3D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17251B4C2EE50C1E8939B0EB /* Pods-CQAVPlayerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N4A75FTPE;
+				INFOPLIST_FILE = CQAVPlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chenqing.CQAVPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CQAVPlayer.app/CQAVPlayer";
+			};
+			name = Release;
+		};
+		168503A526B674D40061A3D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3083E62B2474ED2EF96F65CA /* Pods-CQAVPlayer-CQAVPlayerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N4A75FTPE;
+				INFOPLIST_FILE = CQAVPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chenqing.CQAVPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CQAVPlayer;
+			};
+			name = Debug;
+		};
+		168503A626B674D40061A3D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5DF1E3B990A3E42AF9D794E /* Pods-CQAVPlayer-CQAVPlayerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N4A75FTPE;
+				INFOPLIST_FILE = CQAVPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chenqing.CQAVPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CQAVPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1685036F26B674D10061A3D3 /* Build configuration list for PBXProject "CQAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1685039C26B674D40061A3D3 /* Debug */,
+				1685039D26B674D40061A3D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1685039E26B674D40061A3D3 /* Build configuration list for PBXNativeTarget "CQAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1685039F26B674D40061A3D3 /* Debug */,
+				168503A026B674D40061A3D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		168503A126B674D40061A3D3 /* Build configuration list for PBXNativeTarget "CQAVPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				168503A226B674D40061A3D3 /* Debug */,
+				168503A326B674D40061A3D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		168503A426B674D40061A3D3 /* Build configuration list for PBXNativeTarget "CQAVPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				168503A526B674D40061A3D3 /* Debug */,
+				168503A626B674D40061A3D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1685036C26B674D10061A3D3 /* Project object */;
+}
