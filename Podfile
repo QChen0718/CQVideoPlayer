@@ -7,6 +7,7 @@ target 'CQAVPlayer' do
 
   # Pods for CQAVPlayer
   pod "SnapKit", "~> 5.0.0"
+  pod 'Alamofire', '~> 5.4'
   target 'CQAVPlayerTests' do
     inherit! :search_paths
     # Pods for testing

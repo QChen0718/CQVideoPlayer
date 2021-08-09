@@ -67,5 +67,9 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>请允许APP保存视频到相册中</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>请允许APP保存视频到相册中</string>
 </dict>
 </plist>

@@ -21,6 +21,7 @@
 		8C2E6F1A2D746FD6F4CC0090 /* Pods_CQAVPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE42D258A572F3E4AA711924 /* Pods_CQAVPlayer.framework */; };
 		A4886AB726C0E3580000E38E /* DragGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4886AB626C0E3580000E38E /* DragGestureHandler.swift */; };
 		A4886AB926C101220000E38E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4886AB826C101220000E38E /* UIView+Extension.swift */; };
+		A4886ABB26C12CA30000E38E /* DownLoadFileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4886ABA26C12CA30000E38E /* DownLoadFileTableViewController.swift */; };
 		A4C94C8A26BB8535009580BA /* MySlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C94C8926BB8535009580BA /* MySlider.swift */; };
 		E373E25F4E695B9B00BEBDCC /* Pods_CQAVPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079914F9C75CA9BB914525A9 /* Pods_CQAVPlayerTests.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		3083E62B2474ED2EF96F65CA /* Pods-CQAVPlayer-CQAVPlayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAVPlayer-CQAVPlayerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CQAVPlayer-CQAVPlayerUITests/Pods-CQAVPlayer-CQAVPlayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4886AB626C0E3580000E38E /* DragGestureHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureHandler.swift; sourceTree = "<group>"; };
 		A4886AB826C101220000E38E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A4886ABA26C12CA30000E38E /* DownLoadFileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLoadFileTableViewController.swift; sourceTree = "<group>"; };
 		A4C94C8926BB8535009580BA /* MySlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySlider.swift; sourceTree = "<group>"; };
 		AA177E500E9F14873AEB6058 /* Pods-CQAVPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAVPlayer.release.xcconfig"; path = "Target Support Files/Pods-CQAVPlayer/Pods-CQAVPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		ADF87F9E756928C5F783FFF8 /* Pods_CQAVPlayer_CQAVPlayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQAVPlayer_CQAVPlayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 				1685037726B674D10061A3D3 /* AppDelegate.swift */,
 				1685037926B674D10061A3D3 /* SceneDelegate.swift */,
 				1685037B26B674D10061A3D3 /* ViewController.swift */,
+				A4886ABA26C12CA30000E38E /* DownLoadFileTableViewController.swift */,
 				168503A726B675CF0061A3D3 /* VideoPlayerView.swift */,
 				168503A926B68ACF0061A3D3 /* PlayerView.swift */,
 				A4C94C8926BB8535009580BA /* MySlider.swift */,
@@ -429,6 +432,7 @@
 				A4886AB726C0E3580000E38E /* DragGestureHandler.swift in Sources */,
 				168503AA26B68ACF0061A3D3 /* PlayerView.swift in Sources */,
 				168503A826B675CF0061A3D3 /* VideoPlayerView.swift in Sources */,
+				A4886ABB26C12CA30000E38E /* DownLoadFileTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +612,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HSU9RDWBTM;
 				INFOPLIST_FILE = CQAVPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -628,6 +633,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HSU9RDWBTM;
 				INFOPLIST_FILE = CQAVPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
